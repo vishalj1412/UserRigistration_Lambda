@@ -1,7 +1,8 @@
 package lambda;
 
 import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.jupiter.api.*;
 
 public class UserValidationTest {
     @Test
@@ -14,6 +15,15 @@ public class UserValidationTest {
     public void givenlastNameValidation() {
         UserRegistrationValidation validation = new UserRegistrationValidation();
 
-        Assert.assertTrue(validation.firstNameValidation("Jagtap"));
+        Assert.assertTrue(validation.lastNameValidation("Jagtap"));
+    }
+    /*
+    test case for email id.
+     */
+    @Test
+    public void givenEmailIdValidation() {
+        UserRegistrationValidation emailvalidation = new UserRegistrationValidation();
+
+        Assert.assertTrue(emailvalidation.emailValidation("mkgandhi007@gmail.com"));
     }
     }
