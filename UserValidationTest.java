@@ -1,21 +1,32 @@
 package lambda;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.jupiter.api.*;
 
 public class UserValidationTest {
+    /*
+    test case for first name.
+     */
     @Test
     public void givenFirstNameValidation() {
         UserRegistrationValidation validation = new UserRegistrationValidation();
+try {
+    Assert.assertTrue(validation.firstNameValidation("ishal"));
+}catch (InvalidInputException e){
 
-        Assert.assertTrue(validation.firstNameValidation("Vishal"));
+}
     }
+    /*
+    test case for lst name
+     */
     @Test
     public void givenlastNameValidation() {
         UserRegistrationValidation validation = new UserRegistrationValidation();
+        try {
+            Assert.assertTrue(validation.lastNameValidation("agtap"));
 
-        Assert.assertTrue(validation.lastNameValidation("Jagtap"));
+        } catch (InvalidInputException e) {
+        }
     }
     /*
     test case for email id.
@@ -23,8 +34,11 @@ public class UserValidationTest {
     @Test
     public void givenEmailIdValidation() {
         UserRegistrationValidation emailvalidation = new UserRegistrationValidation();
+        try {
+            Assert.assertTrue(emailvalidation.emailValidation("mkgandhi007@gmail.com"));
+        } catch (InvalidInputException e) {
 
-        Assert.assertTrue(emailvalidation.emailValidation("mkgandhi007@gmail.com"));
+        }
     }
     /*
     test case for mobile number.
@@ -32,8 +46,11 @@ public class UserValidationTest {
     @Test
     public void givenMobileNumberValidation() {
         UserRegistrationValidation validation = new UserRegistrationValidation();
-
+try{
         Assert.assertTrue(validation.mobileNumberValidation("+918882695710"));
+    }catch (InvalidInputException e) {
+
+}
     }
     /*
     test case for password
@@ -41,7 +58,10 @@ public class UserValidationTest {
     @Test
     public void givenPasswordValidation() {
         UserRegistrationValidation validation = new UserRegistrationValidation();
+        try {
+            Assert.assertTrue(validation.passwordValidation("qw1rt@Ms"));
+        }catch (InvalidInputException e) {
 
-        Assert.assertTrue(validation.passwordValidation("qw1rt@Ms"));
-    }
+        }
+        }
     }
