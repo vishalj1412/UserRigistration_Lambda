@@ -11,7 +11,7 @@ public class UserValidationTest {
     public void givenFirstNameValidation() {
         UserRegistrationValidation validation = new UserRegistrationValidation();
 try {
-    Assert.assertTrue(validation.firstNameValidation("ishal"));
+    Assert.assertTrue(validation.firstNameValidation("Vishal"));
 }catch (InvalidInputException e){
 
 }
@@ -23,7 +23,7 @@ try {
     public void givenlastNameValidation() {
         UserRegistrationValidation validation = new UserRegistrationValidation();
         try {
-            Assert.assertTrue(validation.lastNameValidation("agtap"));
+            Assert.assertTrue(validation.lastNameValidation("Jagtap"));
 
         } catch (InvalidInputException e) {
         }
