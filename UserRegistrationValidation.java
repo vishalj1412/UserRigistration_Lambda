@@ -38,9 +38,22 @@ public class UserRegistrationValidation {
         String regex = "^[a-z0-9]+([_+-.][0-9a-z]+)*@[a-z0-9]+.(com|net)(.[a-z]{2,3}){0,1}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(email);
-        boolean emailresult=matcher.matches();
+        boolean result=matcher.matches();
 
-        return emailresult;
+        return result;
+
+    }
+    /*
+    Mobile number validation
+     */
+    public boolean mobileNumberValidation(String mobileNumber){
+
+        String regex = "^(?:(?:\\+|0{0,2})91(\\s*[\\-]\\s*)?|[0]?)?[789]\\d{9}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(mobileNumber);
+        boolean result=matcher.matches();
+
+        return result;
 
     }
     }
