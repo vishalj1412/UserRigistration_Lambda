@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.jupiter.api.*;
 
 public class UserValidationTest {
+    
     /*
     test case for first name.
      */
