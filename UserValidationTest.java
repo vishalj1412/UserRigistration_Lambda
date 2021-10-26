@@ -35,4 +35,13 @@ public class UserValidationTest {
 
         Assert.assertTrue(validation.mobileNumberValidation("+918882695710"));
     }
+    /*
+    test case for password
+     */
+    @Test
+    public void givenPasswordValidation() {
+        UserRegistrationValidation validation = new UserRegistrationValidation();
+
+        Assert.assertTrue(validation.passwordValidation("qw1rt@Ms"));
+    }
     }

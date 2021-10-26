@@ -7,53 +7,68 @@ public class UserRegistrationValidation {
      validate first name using regex expression
 
      */
-    public static boolean firstNameValidation(String firstName){
+    public static boolean firstNameValidation(String firstName) {
 
-                String regex = "^[A-Z]{1}[a-z]{2,}$";
-                Pattern pattern = Pattern.compile(regex);
-                Matcher matcher = pattern.matcher(firstName);
-                boolean result=matcher.matches();
+        String regex = "^[A-Z]{1}[a-z]{2,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(firstName);
+        boolean result = matcher.matches();
 
-            return result;
+        return result;
 
-        }
-        /*
-        validate last name using regex expression
-         */
-    public static boolean lastNameValidation(String lastName){
+    }
+
+    /*
+    validate last name using regex expression
+     */
+    public static boolean lastNameValidation(String lastName) {
 
         String regex = "^[A-Z]{1}[a-z]{2,}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(lastName);
-        boolean lastNameresult=matcher.matches();
+        boolean lastNameresult = matcher.matches();
 
         return lastNameresult;
 
     }
+
     /*
     email id validation
      */
-    public boolean emailValidation(String email){
+    public boolean emailValidation(String email) {
 
         String regex = "^[a-z0-9]+([_+-.][0-9a-z]+)*@[a-z0-9]+.(com|net)(.[a-z]{2,3}){0,1}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(email);
-        boolean result=matcher.matches();
+        boolean result = matcher.matches();
 
         return result;
 
     }
+
     /*
     Mobile number validation
      */
-    public boolean mobileNumberValidation(String mobileNumber){
+    public boolean mobileNumberValidation(String mobileNumber) {
 
         String regex = "^(?:(?:\\+|0{0,2})91(\\s*[\\-]\\s*)?|[0]?)?[789]\\d{9}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(mobileNumber);
-        boolean result=matcher.matches();
+        boolean result = matcher.matches();
 
         return result;
 
     }
+
+    /*
+    password validation.
+     */
+    public boolean passwordValidation(String password) {
+
+        String regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8,20}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(password);
+        boolean result = matcher.matches();
+        return result;
     }
+}
