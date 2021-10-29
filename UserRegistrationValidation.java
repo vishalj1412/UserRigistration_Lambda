@@ -28,7 +28,6 @@ public class UserRegistrationValidation {
         boolean lastNameresult=matcher.matches();
 
         return lastNameresult;
-
     }
     /*
     email id validation
