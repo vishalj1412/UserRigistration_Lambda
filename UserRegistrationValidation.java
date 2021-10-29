@@ -14,6 +14,9 @@ public class UserRegistrationValidation {
             return result;
 
         }
+    /*
+    user last name validation
+    */
     public static boolean lastNameValidation(String lastName){
 
         String regex = "^[A-Z]{1}[a-z]{2,}$";
