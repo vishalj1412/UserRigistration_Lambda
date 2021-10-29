@@ -16,7 +16,8 @@ public class UserValidationTest {
         UserRegistrationValidation validation = new UserRegistrationValidation();
 
         Assert.assertTrue(validation.lastNameValidation("Jagtap"));
-    }
+    
+   }
     /*
     test case for email id.
      */
