@@ -15,7 +15,6 @@ public class UserRegistrationValidation {
                 boolean result=matcher.matches();
 
             return result;
-
         }
         /*
         validate last name using regex expression
