@@ -14,6 +14,6 @@ public class UserValidationTest {
     public void givenlastNameValidation() {
         UserRegistrationValidation validation = new UserRegistrationValidation();
 
-        Assert.assertTrue(validation.firstNameValidation("Jagtap"));
+         Assert.assertTrue(validation.firstNameValidation("Jagtap"));
     }
     }
