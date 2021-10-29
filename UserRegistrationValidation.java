@@ -12,7 +12,7 @@ public class UserRegistrationValidation {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(firstName);
         boolean result = matcher.matches();
-try {
+ try {
     if (result != true) {
         throw new InvalidInputException("entered first name is invalid format");
     }
