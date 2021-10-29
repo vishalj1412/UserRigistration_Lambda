@@ -9,7 +9,7 @@ public class UserValidationTest {
     public void givenFirstNameValidation() {
         UserRegistrationValidation validation = new UserRegistrationValidation();
 
-        Assert.assertTrue(validation.firstNameValidation("Vishal"));
+       Assert.assertTrue(validation.firstNameValidation("Vishal"));
     }
     @Test
     public void givenlastNameValidation() {
