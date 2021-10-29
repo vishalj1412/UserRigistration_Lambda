@@ -57,7 +57,6 @@ public class UserRegistrationValidation {
         boolean result = matcher.matches();
 
         return result;
-
     }
 
     /*
