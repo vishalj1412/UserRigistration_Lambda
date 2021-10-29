@@ -8,7 +8,7 @@ public class UserValidationTest {
     test case for first name.
      */
     @Test
-    public void givenFirstNameValidation() {
+   public void givenFirstNameValidation() {
         UserRegistrationValidation validation = new UserRegistrationValidation();
 try {
     Assert.assertTrue(validation.firstNameValidation("ishal"));
